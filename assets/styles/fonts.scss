@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local("SF Pro Display"), url('assets/fonts/SFProDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SF ProDisplay Light';
+  src: local("SF Pro Display"), url('assets/fonts/SFProDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'SF Pro Display Semibold';
+  src: local("SF Pro Display"), url('assets/fonts/SFProDisplay-Semibold.woff2') format('woff2');
+  font-weight: 700;
+}
