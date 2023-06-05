@@ -19,6 +19,8 @@
   justify-content: space-between;
   width: 98px;
   height: 36px;
+  user-select: none;
+  pointer-events: none;
 }
 
 .logo__img {

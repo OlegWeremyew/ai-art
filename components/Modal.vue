@@ -9,6 +9,8 @@
 </template>
 
 <style scoped lang="scss">
+@import "assets/styles/variables";
+
 .wrapper {
   position: absolute;
   z-index: 10;

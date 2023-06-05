@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
-import Inner from "~/components/Inner/Inner.vue";
+import Choice from "~/components/Choice/Choice.vue";
+import Creations from "~/components/Creations/Creations.vue";
 
 useHead({
   title: "AI Art",
@@ -19,6 +20,8 @@ useHead({
 <template>
   <Logo/>
   <Inner/>
+  <Choice/>
+  <Creations/>
 </template>
 
 <style lang="scss">

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
@@ -12,14 +11,8 @@
         with artistic ideas. Join us and explore the limitless possibilities of AI-generated art!
       </p>
 
-      <div class="links">
-        <button class="link" type="button">
-          <img class="link__img" src="~assets/images/apple-store-badge.png" alt="App store" title="App store">
-        </button>
-        <button class="link" type="button">
-          <img class="link__img" src="~assets/images/play-store-badge.png" alt="Google play" title="Google play">
-        </button>
-      </div>
+      <Links/>
+
     </div>
 
   </section>
@@ -43,6 +36,7 @@
 
 .inner__title {
   margin-top: 291px;
+  text-align: center;
   background: linear-gradient(180deg, #FFFFFF 22.5%, rgba(255, 255, 255, 0.7) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -56,7 +50,7 @@
 
 .inner__text {
   margin-top: 20px;
-  width: 703px;
+  max-width: 703px;
   height: 72px;
   font-style: normal;
   font-weight: 400;
@@ -65,25 +59,5 @@
   text-align: center;
   letter-spacing: -0.16px;
   color: $secondColor;
-}
-
-.links {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  width: 350px;
-  height: 50px;
-}
-
-.link {
-  border: none;
-  cursor: pointer;
-  width: 166.69px;
-  height: 50px;
-}
-
-.link__img {
-  width: 100%;
-  height: 100%;
 }
 </style>
