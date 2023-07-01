@@ -1,0 +1,52 @@
+@import "assets/styles/variables";
+@import "assets/styles/mixins";
+
+.scroll__wrapper {
+  position: fixed;
+  z-index: 4;
+  bottom: 40px;
+  right: 10px;
+  display: flex;
+  justify-content: flex-end;
+
+  @include tabletBig {
+    bottom: 25px;
+    right: 25px;
+  }
+
+  .scroll__button {
+    cursor: pointer;
+    color: white;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $inputBg;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-image: url("assets/images/icons/arrow-up.png");
+    background-repeat: no-repeat;
+    background-position: center top 6px;
+    background-size: 30px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.8;
+      scale: 0.9;
+    }
+  }
+}
+
+.scroll-button__start {
+  opacity: 0;
+  transform: scale(0.6);
+  transition: 0.5s linear all;
+}
+
+.scroll-button__end {
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.5s linear all;
+}

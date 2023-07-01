@@ -1,0 +1,29 @@
+@mixin iPhonesBeforeX {
+  @media (max-width: 390px) {
+    @content;
+  }
+}
+
+@mixin iPhonesAfterX {
+  @media only screen and (max-aspect-ratio: 56 / 100) {
+    @content;
+  }
+}
+
+@mixin startPhones {
+  @media only screen and (max-width: 673px) {
+    @content;
+  }
+}
+
+@mixin tabletSmall {
+  @media only screen and (max-width: 744px)  {
+    @content;
+  }
+}
+
+@mixin tabletBig {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
