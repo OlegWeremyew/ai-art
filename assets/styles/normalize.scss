@@ -39,10 +39,6 @@ body {
   line-height: 1;
 }
 
-ol, ul {
-  list-style: none;
-}
-
 blockquote, q {
   quotes: none;
 }
@@ -129,8 +125,12 @@ html {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
+a {
+  -webkit-user-drag: none;
+}
+
 a:focus {
-  outline: thin dotted;
+  outline: none;
 }
 
 /**
@@ -363,4 +363,33 @@ textarea {
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
 }

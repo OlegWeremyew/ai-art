@@ -9,6 +9,7 @@ defineProps({
     required: true,
   },
 })
+
 </script>
 
 <template>
@@ -26,6 +27,7 @@ defineProps({
 
 <style scoped lang="scss">
 @import "assets/styles/variables";
+@import "assets/styles/mixins";
 
 .intro {
   display: flex;
@@ -41,7 +43,7 @@ defineProps({
   justify-content: center;
   align-items: center;
   padding: 5px 16px;
-  background: rgba(255, 255, 255, 0.05);
+  background: $innerTitleBg;
   border: 1px solid rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(1px);
   border-radius: 17.8px;
@@ -58,9 +60,15 @@ defineProps({
   letter-spacing: 1.12px;
   text-transform: uppercase;
   color: $mainColor;
+
+  &::selection {
+    background-color: $selectionBg;
+  }
 }
 
 .inner-title {
+  position: relative;
+  z-index: 3;
   font-family: 'SF Pro Display Semibold', sans-serif;
   margin-top: 12px;
   font-style: normal;
@@ -72,5 +80,14 @@ defineProps({
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  @include tabletSmall{
+    font-size: 36px;
+    line-height: 64px;
+  }
+
+  &::selection {
+    background-color: $selectionBg;
+  }
 }
 </style>

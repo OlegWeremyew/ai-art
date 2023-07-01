@@ -1,19 +1,36 @@
+<script setup lang="ts">
+defineProps({
+  isFooterPosition: {
+    type: Boolean,
+    required: false,
+    default: false
+  }
+})
+</script>
+
 <template>
-  <figure class="logo">
-    <img class="logo__img" src="~assets/images/icons/logo.svg" alt="Ai Art logo" title="AI Art logo">
+  <figure
+      class="logo"
+      :class="{column : isFooterPosition}"
+  >
+    <img
+        class="logo__img"
+        src="~assets/images/icons/logo.webp"
+        alt="Ai Art logo"
+        title="AI Art logo"
+        loading="lazy"
+    />
     <figcaption class="logo__text">Ai Art</figcaption>
   </figure>
 </template>
 
 <style scoped lang="scss">
 @import "assets/styles/variables";
+@import "assets/styles/mixins";
 
 .logo {
   margin: 0;
   padding: 0;
-  position: fixed;
-  top: 30px;
-  left: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,5 +52,17 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.column {
+  @include tabletBig {
+    height: 68px;
+    flex-direction: column;
+
+    .logo__text {
+      margin-top: 8px;
+      margin-bottom: 30px;
+    }
+  }
 }
 </style>
