@@ -1,7 +1,5 @@
 # Ai Art site with Nuxt 3
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
 ## Setup
 
 Make sure to install the dependencies:
@@ -17,7 +15,7 @@ npm install
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`
+Start the development server on `http://localhost:8080`
 
 ```bash
 yarn run dev
@@ -42,8 +40,3 @@ yarn run preview
 ```bash
 yarn run build preview
 ```
-Build the application for production and then preview the production build automatically locally:
-Start the preview server on `http://localhost:3000`
-
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

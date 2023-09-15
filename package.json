@@ -1,5 +1,6 @@
 {
   "name": "nuxt-app",
+  "author": "Oleg-veremyev",
   "private": true,
   "scripts": {
     "dev": "nuxt dev",
